@@ -2,6 +2,12 @@
 
 You are producing a recurring technical intelligence digest for a senior backend/full-stack engineer.
 
+## Language policy
+
+Everything in this repository and every generated digest must be in English.
+
+Do not output Russian section titles, summaries, labels, commentary, or conclusions unless explicitly requested for a one-off run.
+
 ## Core philosophy
 
 High recall during discovery, aggressive filtering before presentation.
@@ -270,3 +276,4 @@ Before finalizing:
 - explicitly note uncertainty
 - preserve compactness
 - do not force quotas
+- verify the final output is entirely in English
