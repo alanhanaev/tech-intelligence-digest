@@ -1,0 +1,186 @@
+version: 1
+
+# This is a curated registry, not a mandate to fetch every source on every run.
+# Critical sources should be checked frequently.
+# High sources may be rotated.
+# Discovery sources trigger investigation but should usually resolve to primary evidence.
+
+source_families:
+  major_ai:
+    critical:
+      - OpenAI News / Developers / Changelog
+      - Anthropic News / Engineering / Research
+      - Google DeepMind / Google AI
+      - Qwen
+      - DeepSeek
+      - Hugging Face
+      - Epoch AI
+      - Artificial Analysis
+      - METR
+      - OpenRouter Rankings
+    high:
+      - Meta AI
+      - Mistral
+      - Cohere
+      - xAI
+      - Microsoft AI / Research
+      - NVIDIA AI
+      - AWS Bedrock / AI
+      - AI2
+      - Interconnects
+      - Simon Willison
+
+  ai_engineering:
+    critical:
+      - Hamel Husain
+      - Eugene Yan
+      - Applied LLMs
+      - LangChain / LangGraph / LangSmith
+      - Braintrust
+      - OpenTelemetry GenAI semantic conventions
+      - MCP spec / blog / SDKs / registry
+    high:
+      - Shreya Shankar
+      - Langfuse
+      - Arize / Phoenix
+      - Cognition
+      - Manus
+      - Lance Martin
+      - Chroma Research
+      - Jason Liu
+      - Vercel AI SDK
+      - Modal
+      - Baseten
+      - vLLM
+      - SGLang / LMSYS
+      - Weaviate
+      - Qdrant
+      - Elastic Search Labs
+      - pgvector
+      - Unstructured
+      - Together AI
+      - Fireworks AI
+      - DSPy
+      - Instructor
+      - Outlines
+
+  ai_security:
+    high:
+      - Embrace The Red / Johann Rehberger
+      - OWASP GenAI
+      - PromptArmor
+      - UK AI Security Institute
+
+  ai_developer_tools:
+    critical:
+      - Claude Code changelog / docs / engineering
+      - OpenAI Codex changelog / guides
+      - Cursor changelog / blog / docs
+      - GitHub Copilot changelog
+    high:
+      - Gemini developer tooling
+      - JetBrains AI
+      - opencode
+      - Cline
+      - Goose
+      - Zed
+      - SWE-bench
+      - Terminal-Bench
+
+  ai_workflow_lifehacks:
+    critical:
+      - OpenAI Codex guides and engineering posts
+      - Anthropic Engineering / Claude Code best practices
+      - Cursor agent best practices / docs
+      - Simon Willison Agentic Engineering Patterns
+      - Hamel Husain
+      - Braintrust
+    high:
+      - Eugene Yan
+      - Applied LLMs
+      - LangChain / LangGraph / LangSmith
+      - Vercel AI SDK
+      - JetBrains AI engineering
+      - Sourcegraph engineering
+      - Zed engineering
+      - Replit engineering
+
+  research_discovery:
+    discovery:
+      - Hugging Face Daily Papers
+      - arXiv
+      - alphaXiv
+      - Scholar Inbox
+      - Emergent Mind
+      - OpenReview
+      - major AI conferences
+
+  job_market:
+    primary_or_data:
+      - FRED Indeed software-development postings
+      - Indeed Hiring Lab
+      - Stanford Digital Economy Lab Canaries Dashboard
+      - BLS
+      - ONS
+      - Eurostat
+      - Adzuna
+      - Revelio Labs
+      - Lightcast
+      - Burning Glass Institute
+      - ADP Research
+      - Challenger Gray & Christmas
+      - Levels.fyi
+      - Ravio
+      - Stack Overflow Developer Survey
+      - JetBrains Developer Ecosystem
+      - GitHub Octoverse
+      - LinkedIn Economic Graph
+    discovery:
+      - Layoffs.fyi
+      - WARNTracker
+      - TrueUp
+      - HN Who Is Hiring
+      - Pragmatic Engineer
+
+  backend:
+    high:
+      - Node.js
+      - TypeScript
+      - React
+      - Next.js
+      - NestJS releases
+      - PostgreSQL News
+      - pganalyze
+      - Crunchy Data
+      - Redis
+      - Kafka / Confluent
+      - Jepsen
+      - Kubernetes
+      - Cloudflare
+      - AWS Architecture
+      - Grafana
+      - Netflix Engineering
+      - Uber Engineering
+      - ACM Queue
+
+access_policy:
+  preferred_order:
+    - api
+    - rss_atom
+    - github_releases
+    - changelog
+    - direct
+    - sitemap
+    - search
+    - browserless
+    - secondary_or_skip
+
+  browserless:
+    role: last_mile_fallback
+    known_candidates:
+      - DeepSeek changelog/pages when direct extraction fails
+      - Qwen dynamic pages if search/direct is incomplete
+      - Sourcegraph index pages if direct extraction fails
+      - Karat research index if direct extraction fails
+      - Pinecone pages if direct parser fails
+      - Eurostat dynamic pages if API/direct options fail
