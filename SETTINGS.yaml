@@ -1,0 +1,74 @@
+digest:
+  language: ru
+  daily_news_lookback_hours: 24
+  weekly_news_lookback_days: 7
+  ai_workflow_lookback_days: 30
+
+  daily_target_news_count: 10
+  weekly_target_news_count: 35
+  weekly_max_news_count: 50
+
+  daily_ai_workflow_target: 5
+  weekly_ai_workflow_target: 12
+
+sections:
+  major_ai: true
+  ai_engineering: true
+  ai_developer_tools: true
+  prompt_context_engineering: true
+  practical_ai_research: true
+  job_market: true
+  fullstack_backend_infra: true
+  ai_workflow_lifehacks: true
+
+priorities:
+  major_ai: 1
+  ai_engineering: 2
+  ai_developer_tools: 3
+  prompt_context_engineering: 4
+  practical_ai_research: 5
+  job_market: 6
+  fullstack_backend_infra: 7
+  ai_workflow_lifehacks: 2
+
+job_market:
+  regions:
+    - Europe
+    - UK
+    - US
+    - Remote
+
+fullstack_backend_infra:
+  priority: low
+  suppress_small_patch_releases: true
+
+ai_workflow_lifehacks:
+  labels:
+    - TRY
+    - READ
+    - KNOW
+  include_usefulness_score: true
+  include_effort_score: true
+  prefer_actionable_examples: true
+  suppress_generic_prompt_lists: true
+
+ranking:
+  prioritize:
+    - actionability
+    - developer_impact
+    - novelty
+    - source_confidence
+    - evidence_strength
+    - practical_applicability
+  penalize:
+    - marketing_hype
+    - duplicates
+    - weak_evidence
+    - speculation
+    - tiny_patch_release
+    - funding_only
+    - generic_opinion
+
+access:
+  browserless_only_as_fallback: true
+  never_bypass_access_controls: true
