@@ -1,5 +1,5 @@
 digest:
-  language: ru
+  language: en
   daily_news_lookback_hours: 24
   weekly_news_lookback_days: 7
   ai_workflow_lookback_days: 30
