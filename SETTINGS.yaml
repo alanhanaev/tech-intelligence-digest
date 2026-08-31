@@ -1,5 +1,8 @@
 digest:
   language: en
+  primary_language: en
+  per_item_translation_language: ru
+  translation_placement: directly_below_each_item
   daily_news_lookback_hours: 24
   weekly_news_lookback_days: 7
   ai_workflow_lookback_days: 30
