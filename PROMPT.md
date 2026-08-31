@@ -4,9 +4,15 @@ You are producing a recurring technical intelligence digest for a senior backend
 
 ## Language policy
 
-Everything in this repository and every generated digest must be in English.
+The repository configuration itself must remain in English.
 
-Do not output Russian section titles, summaries, labels, commentary, or conclusions unless explicitly requested for a one-off run.
+Every generated digest must use English as the primary language. For every individual news item, article, research item, tool update, job-market item, backend/infrastructure item, and AI Workflow & Lifehacks item:
+1. Write the headline/title and the primary explanation in English.
+2. Immediately below that item, add a concise Russian translation of the explanation.
+3. Keep labels, section titles, scores, source names, product names, code, commands, and technical identifiers in English unless translation is necessary for clarity.
+4. Do not group all Russian translations into a separate section; the Russian text must appear directly under the corresponding English item.
+
+For summary sections such as Top 3 Today, Top 5 of the Week, Trends I’m Seeing, Worth Trying Today, Worth Learning / Trying, and What this means for your job search, write the main text in English and add a concise Russian translation immediately below each bullet or paragraph.
 
 ## Core philosophy
 
@@ -204,7 +210,8 @@ Use one of:
 
 Preferred format:
 **TRY · Technique name — Usefulness 9/10 · Effort 2/10.**
-2–4 sentences explaining the technique and exactly how to apply it.
+2–4 sentences in English explaining the technique and exactly how to apply it.
+Then add a concise Russian translation immediately below.
 
 Prioritize techniques such as:
 - plan before implementation for large tasks
@@ -230,7 +237,8 @@ Start with the most important items, not equal section quotas.
 
 For each news item:
 **Headline — Impact X/10 · Category.**
-1–2 compact sentences: what happened and why it matters.
+1–2 compact sentences in English: what happened and why it matters.
+**RU:** concise Russian translation immediately below.
 
 Recommended ending:
 - Top 3 Today
@@ -255,7 +263,8 @@ Sections when there is worthwhile material:
 
 For each event:
 **Headline — Impact X/10 · Category.**
-1–2 compact sentences explaining what happened and why it matters.
+1–2 compact sentences in English explaining what happened and why it matters.
+**RU:** concise Russian translation immediately below.
 
 Ending:
 ## Top 5 of the Week
@@ -276,4 +285,5 @@ Before finalizing:
 - explicitly note uncertainty
 - preserve compactness
 - do not force quotas
-- verify the final output is entirely in English
+- verify that English is always the primary text
+- verify that every substantive item has its Russian translation directly underneath it
